@@ -6,11 +6,30 @@
 }
 
 .container {
+	position: relative;
 	height: 100vh;
 	background-color: #ffffff;
 }
 
 img {
+	position: absolute;
+	width: 128px;
+	height: 128px;
 	border-radius: 50%;
 	cursor: pointer;
+}
+
+.modal {
+	position: absolute;
+	z-index: 100;
+	left: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 30px;
+	border-radius: 0 0 8px 8px;
+	background-color: #fff;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+	transform: translateX(-50%);
 }
