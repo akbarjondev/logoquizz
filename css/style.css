@@ -1,0 +1,16 @@
+.body {
+	font-family: monospace;
+	margin: 0;
+	padding: 0;
+	background-color: #ccc;
+}
+
+.container {
+	height: 100vh;
+	background-color: #ffffff;
+}
+
+img {
+	border-radius: 50%;
+	cursor: pointer;
+}
