@@ -34,6 +34,7 @@ function getId (evt) {
 		} else {
 			modal.textContent = 'You win!'
 			modal.classList.add('green')
+			window.clearInterval(intervalId)
 		}		
 	} else {
 		modal.classList.add('shake')
@@ -52,7 +53,7 @@ function shuffle(arr) {
 	return copiedArr.sort(() => Math.random() - 0.5)
 }
 
-let sec = arrData.length * 3
+let sec = arrData.length * 2 // second per logo
 
 let intervalId = setInterval(() => {
 	modalTime.textContent = sec
