@@ -1,9 +1,9 @@
 import { data } from './data.js'
 
 if(window.innerWidth > 1024) {
+	alertText.remove()
 	modal.classList.add('modal--open')
 	modalTime.classList.add('modal--open')
-	alertText.remove()
 
 	let arrData = shuffle(data)
 
